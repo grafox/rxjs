@@ -4,7 +4,6 @@ require('rxjs/add/observable/from');
 require('rxjs/add/operator/combineLatest');
 require('rxjs/add/operator/zip');
 
-
 /*
 let a1 = 2;
 let b1 = 4;
@@ -14,7 +13,6 @@ let c1 = a1 + b1;  // c1 = 6
 a1 = 55;           // c1 = 6;    
 b1 = 20;           // c1 = 6;
 */
-
 
 const a1$ = Observable.from([2, 55])
     .zip(Observable.interval(1200), x => x);  // emit 2 and 55  1.2 sec apart
