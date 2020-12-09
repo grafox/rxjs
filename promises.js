@@ -39,7 +39,6 @@ function getOrders(customer){
     return promise;
 }
 
-
 getCustomers()
     .then(cust => console.log(cust))
     .then(cust => getOrders(cust))
